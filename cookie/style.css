@@ -36,6 +36,9 @@
     padding: 0.7rem 0;
     font-size: 0.6rem;
 }
+.notifications {
+    overflow: visible
+}
 button {
     border-style: none;
     padding: 0.5rem 1rem;
