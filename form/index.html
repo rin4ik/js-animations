@@ -11,7 +11,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <form>
+        <div class="contact-left">
+            <h1 class="title">Contact Us</h1>
+            <p class="description">
+                Let's stay in touch. </br> For more information, </br> sign up.
+            </p>
+        </div>
+        <div class="contact-right">
+            <div class="input-container">
+                <p class="placeholder">Your name</p>
+                <input type="text" name="name" autocomplete="off" class="input-name input">
+                <svg class="line-svg" width="300" height="2" viewBox="0 0 300 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="elastic-line" d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512" stroke="#D1D4DA" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="input-container">
+                <p class="placeholder">Your Email</p>
+                <input type="email" name="email" autocomplete="off" class="input-email input">
+                <svg class="line-svg" width="300" height="2" viewBox="0 0 300 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="elastic-line" d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512" stroke="#D1D4DA" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="input-container">
+                <p class="placeholder">Phone Number</p>
+                <input type="tel" name="tel" autocomplete="off" class="input-number input">
+                <svg class="line-svg" width="300" height="2" viewBox="0 0 300 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="elastic-line" d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512" stroke="#D1D4DA" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="promo-container">
+                <div class="checkbox-container">
+                    <span class="checkmark"></span>
+                    <div class="checkbox-fill"></div>
+                    <input type="checkbox" name="checkbox">
+                    <svg
+                        width="19"
+                        height="16"
+                        viewBox="0 0 19 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="tick-mark"
+                    >
+                        <path class="elastic-line" d="M2 8.5L6.5 13L17.5 2" stroke="white" stroke-width="4" />
+                    </svg>
+                </div>
+                <label for="checkbox-label">Send me promotions offers.</label>
+            </div>
+            <button>Join</button>
+        </div>
+    </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
 </body>
