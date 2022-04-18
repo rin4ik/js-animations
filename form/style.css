@@ -36,7 +36,8 @@ form {
     height: 100%;
     position: absolute;
     top: 0;
-    border: none;
+    border: none; 
+    outline: none;
 }
 .input-container { 
     position:relative
@@ -52,6 +53,7 @@ form {
 .line-svg {
     position: absolute;
     left: 0;
+    overflow: visible;
     bottom: 0;
 } 
 .promo-container {
