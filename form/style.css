@@ -8,7 +8,7 @@ body {
     justify-content:center;
     align-items: center;
     height:100vh;
-    font: "Poppins" sans-serif;
+    font-family: "Poppins", sans-serif;
     background: linear-gradient(90deg, #6190e8, #a7bfe8)
 }
 form {
@@ -67,6 +67,7 @@ form {
 .checkbox {
     opacity: 0;
     cursor: pointer;
+    z-index: 3
 }
 .checkbox-label {
     padding-left: 0.5rem;
@@ -113,4 +114,11 @@ button {
     cursor:pointer;
     align-self: flex-start; 
     margin-top: 1rem;
+}
+#character {
+    position: absolute;
+    transform: scale(0.7) translate(-40%, 50%);
+    bottom: 0;
+    top: 0;
+    transform-origin: bottom
 }
