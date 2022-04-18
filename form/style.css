@@ -122,3 +122,29 @@ button {
     top: 0;
     transform-origin: bottom
 }
+.submitted {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #777474;
+    pointer-events: none;
+    text-align: center;
+    font-size: 1rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+@media screen and (max-width: 812px) {
+    form {
+        width: 90vw;
+        min-height: 80vh;
+        flex-direction: column;
+        padding: 8rem 3rem
+    }
+    .line-svg {
+        width: 100%
+    }
+    #character {
+        transform: scale(0.4) translate(0%, 30%)
+    }
+}
