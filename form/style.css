@@ -18,7 +18,8 @@ form {
     border-radius: 2rem;
     color: #777474;
     padding: 3rem 5rem;
-    display: flex
+    display: flex;
+    position: relative
 }
 .title {
     color: #6391e8;
@@ -38,6 +39,8 @@ form {
     top: 0;
     border: none; 
     outline: none;
+    color: #777474;
+    font-size: 0.8rem
 }
 .input-container { 
     position:relative
@@ -45,10 +48,11 @@ form {
 .placeholder {
     position: relative;
     z-index: 1;
-    pointer-event: none;
+    pointer-events: none;
     padding: 0.3rem 0;
     font-size: 0.8rem;
-    opacity: 0.6
+    opacity: 0.6;
+    transform-origin: left;
 }
 .line-svg {
     position: absolute;
