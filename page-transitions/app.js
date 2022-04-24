@@ -39,8 +39,7 @@ barba.init({
                 let current = data.current.container
                 leaveAnimation(current, done)
             },
-            enter(data){ 
-                console.log(data);
+            enter(data){
                 const done = this.async()
                 let next = data.next.container 
                 let gradient = getGradient(data.next.namespace)
