@@ -17,7 +17,7 @@ const leaveAnimation = (current, done) => {
     )
 }
 const enterAnimation = (next, done, gradient) => {
-    const product = next.querySelector('.image-container')
+    const product = next.querySelector('.image-container') 
     const text = next.querySelector('.showcase-text')
     const circles = next.querySelectorAll('.circle')
     const arrow = next.querySelector('.showcase-arrow')
@@ -34,6 +34,13 @@ barba.init({
     transitions: [
         {
             name: "default",
+            once(data) {
+                const done = this.async()
+                let next = data.next.container
+                let gradient = getGradient(data.next.namespace)
+                gsap.set('body', {background: gradient})
+                enterAnimation(next, done, gradient)
+            },
             leave(data) {
                 const done = this.async()
                 let current = data.current.container
