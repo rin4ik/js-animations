@@ -129,3 +129,34 @@ nav img {
 .card {
     padding: 2rem
 }
+@media screen and (max-width: 768px) {
+    .showcase {
+        flex-direction: column;
+        padding: 20%;
+        justify-content: space-evenly;
+        min-height: 85vh;
+    }
+    .image-container {
+        min-height: 10vh;
+        justify-content: center;
+        order: 1;
+    }
+
+    .circle-1, .circle-2 {
+        display:none;
+    }
+    .showcase-title {
+        font-size: 1.5rem;
+    }
+    .showcase-subtitle {
+        font-size: 1rem;
+        padding: 2rem 0rem;
+    }
+    .showcase-text {
+        padding-bottom: 0
+    }
+    .showcase-arrow {
+        right: 0;
+        bottom: 50%;
+    } 
+}
