@@ -89,3 +89,42 @@ nav img {
     top: 15%;
     transform: scale(1.5)
 }
+.product-nav {
+    min-height: 100vh;
+}
+.product-section {
+    background: white;
+    min-height: 90vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 5
+}
+.product-description {
+    padding: 5% 15%;
+    color: #4b4b4b;
+}
+.product-description h2 {
+    font-size: 2rem;
+}
+.product-description p {
+    font-size: 1.2rem;
+    padding: 1rem 0rem;
+}
+.product-gallery {
+    display: grid;
+    padding:0% 15%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+.product-gallery .product-image {
+    border-radius: 1rem;
+    width: 100%;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    padding: 2rem
+}
