@@ -76,7 +76,6 @@ function productEnterAnimation (next, done) {
     tlEnter.fromTo('.card', {opacity: 0, y: 50}, {opacity: 1, y: 0, stagger: 0.1, onComplete: done})
 }
 function productLeaveAnimation (current, done) {
-    console.log('leavingf')
     tlLeave.fromTo(current, {y: "0%"}, {y: "100%", onComplete: done})
 }
 function getGradient(name) {
