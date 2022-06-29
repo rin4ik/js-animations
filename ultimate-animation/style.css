@@ -84,4 +84,48 @@ nav, a {
     z-index: 2;
     font-weight: bold;
 }
-
+/*third page phone split */
+.third-page {
+    position:relative;
+    padding: 0% 20%;
+}
+.product-text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 100vh;
+    background: white;
+}
+.phone-size {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.pro-size {
+    text-align: right
+}
+.max-size {
+    text-align: left
+}
+.product-images {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.large-phone {
+    position: relative;
+    transform: translateX(40%) scale(0.5);
+    z-index: 1;
+}
+.small-phone {
+    z-index: 2;
+    position: relative;
+    transform: translateX(-40%) scale(0.5);
+}
+.retina-line {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,-15%);
+    font-size: 0.8rem
+}
