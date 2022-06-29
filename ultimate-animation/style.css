@@ -129,3 +129,86 @@ nav, a {
     transform: translate(-50%,-15%);
     font-size: 0.8rem
 }
+/* 4th page slider */
+.forth-page {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+.purchase-left {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.phone-gallery {
+    display: flex;
+    align-self: flex-start;
+}
+.phone-gallery img {
+    transform: scale(0.8);
+}
+.phone-gallery-container {
+    min-width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swatch-container {
+    text-align: center;
+}
+.swatch-container span {
+    font-size: 0.8rem;
+}
+.swatches img {
+    padding: 0.5rem 0.3rem;
+    cursor: pointer;
+}
+.purchase-right {
+    flex: 1;
+    position: relative;
+    background: black;
+}
+.purchase-right img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(0.8);
+    transform-origin: bottom;
+}
+
+/* Fifth page */
+.fifth-page {
+    min-height: 100vh;
+}
+.product-video {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.product-info-container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 10rem;
+    min-height: 100vh;
+}
+.right-info, .left-info {
+    width: 20%;
+}
+.left-info h3,
+.right-info h3 {
+    padding: 3rem 0rem;
+    color: rgb(193, 193, 193);
+}
+.left-info span, .right-info span {
+    font-size: 1.5rem;
+    color: rgb(210, 210, 210);
+}
