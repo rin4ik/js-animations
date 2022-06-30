@@ -141,11 +141,15 @@ nav, a {
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    background: white;
     flex: 1;
 }
 .phone-gallery {
     display: flex;
     align-self: flex-start;
+}
+.blue {
+    z-index: 1
 }
 .phone-gallery img {
     transform: scale(0.8);
