@@ -90,3 +90,15 @@ const tlVideo = gsap.timeline({
 })
 tlVideo.fromTo(".product-video", {currentTime: 0}, {currentTime: 3, duration: 1})
 tlVideo.fromTo('.product-info-container h3', {opacity: 0}, {opacity: 1, stagger: 0.25, duration: 0.5}, '<')
+
+const tlParallax = gsap.timeline({
+    scrollTrigger:{ 
+        trigger: '.sixth-page',
+        start: "-25%",
+        end:"50%",
+        scrub: true
+    }
+})
+tlParallax.fromTo('.phone-description', {y: 0}, {y: -80})
+tlParallax.fromTo('.portrait-container', {y: 0}, {y: -80}, '<')
+tlParallax.fromTo('.phone-video', {y: 0}, {y: -200}, "<")
